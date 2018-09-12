@@ -1,4 +1,4 @@
-*Rotator
+* Rotator
 	* Get Bone Forward Vector
 	
 
