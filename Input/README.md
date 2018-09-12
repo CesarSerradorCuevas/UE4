@@ -14,6 +14,8 @@ UFUNCTION()
 
 
 //.cpp file
+#include "Engine/Engine.h"
+
 void ACPPcharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	// Set up gameplay key bindings
