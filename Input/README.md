@@ -30,3 +30,6 @@ void ACPPcharacterCharacter::printSomething()
 	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Green, TEXT("Jump button pressed"));
 }
 ```
+
+* Documentation
+	* [EInputEvent](http://api.unrealengine.com/INT/API/Runtime/Engine/Engine/EInputEvent/index.html)
