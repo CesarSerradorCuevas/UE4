@@ -3,9 +3,9 @@
 
 ![](https://github.com/CesarSerradorCuevas/UE4/blob/master/AnimationInstance/MD/AnimInstanceABP.jpg?raw=true)
 
-```
-//MyAnimInstance.h
 
+# MyAnimInstance.h
+```
 #pragma once
 
 #include "CoreMinimal.h"
@@ -37,9 +37,9 @@ public:
 	virtual void NativeUpdateAnimation(float DeltaTimeX) override;
 	
 };
-
-//MyAnimInstance.cpp
-
+```
+# MyAnimInstance.cpp
+```
 #include "MyAnimInstance.h"
 
 
@@ -63,14 +63,16 @@ float UMyAnimInstance::CesarFunc()
 {
 	return 1.0f;
 }
-
-//CPPcharacter.h
+```
+# CPPcharacter.h
+```
 public:
 UPROPERTY()
 	class UMyAnimInstance* animInst;
 
-
-//CPPcharecter.cpp
+```
+# CPPcharecter.cpp
+```
 #include "Engine/Engine.h"
 #include "MyAnimInstance.h"
 
