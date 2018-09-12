@@ -46,5 +46,5 @@ void ACPPcharacterCharacter::Tick(float DeltaTime)
 }
 ```
 
-https://api.unrealengine.com/INT/API/Runtime/Engine/Engine/ECollisionChannel/index.html - automatic!
 [ECollisionChannel](https://api.unrealengine.com/INT/API/Runtime/Engine/Engine/ECollisionChannel/index.html)
+[FHitResult](http://api.unrealengine.com/INT/API/Runtime/Engine/Engine/FHitResult/)
