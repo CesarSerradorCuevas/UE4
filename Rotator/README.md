@@ -12,7 +12,7 @@
 //.h file
 public:
 USkeletalMeshComponent *thisMesh;
-UWorld *myWorld;
+UWorld *thisWorld;
 
 
 //.cpp file
@@ -22,7 +22,7 @@ void ACPPcharacter::BeginPlay()
 	Super::BeginPlay();
 
 	thisMesh = GetMesh();
-	myWorld = GetWorld();
+	thisWorld = GetWorld();
 	
 	
 }
@@ -39,7 +39,7 @@ void ACPPcharacter::Tick(float DeltaTime)
 	FVector footLoc = thisMesh->GetSocketLocation("foot_l");
 	FVector footPlus = footLoc + footForw;
 
-	DrawDebugLine(myWorld, footLoc, footPlus, FColor::Orange, false, 0, -1, 2);	
+	DrawDebugLine(thisWorld, footLoc, footPlus, FColor::Orange, false, 0, -1, 2);	
 	
 }
 
