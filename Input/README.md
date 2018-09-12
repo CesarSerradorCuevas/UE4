@@ -1,10 +1,11 @@
+
+![](https://github.com/CesarSerradorCuevas/UE4/blob/master/Input/MD/ProjectSettings.jpg?raw=true)
+
 * Input
   * BindAction
 
 
 # BindAction
-
-![](https://github.com/CesarSerradorCuevas/UE4/blob/master/Input/MD/ProjectSettings.jpg?raw=true)
 
 ```
 //.h file
