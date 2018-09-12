@@ -33,3 +33,4 @@ void ACPPcharacterCharacter::printSomething()
 
 * Documentation
 	* [EInputEvent](http://api.unrealengine.com/INT/API/Runtime/Engine/Engine/EInputEvent/index.html)
+	* [AddOnScreenDebugMessage](https://api.unrealengine.com/INT/API/Runtime/Engine/Engine/UEngine/AddOnScreenDebugMessage/1/index.html)
