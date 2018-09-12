@@ -7,6 +7,8 @@
 
 # BindAction
 
+![](https://github.com/CesarSerradorCuevas/UE4/blob/master/Input/MD/BindActionBP.jpg?raw=true)
+
 ```
 //.h file
 UFUNCTION()
