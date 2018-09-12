@@ -3,7 +3,7 @@
 
 
 # //.h file
-public:
+> public:
 USkeletalMeshComponent *thisMesh;
 
 
