@@ -46,5 +46,7 @@ void ACPPcharacterCharacter::Tick(float DeltaTime)
 }
 ```
 
-[ECollisionChannel](https://api.unrealengine.com/INT/API/Runtime/Engine/Engine/ECollisionChannel/index.html)
-[FHitResult](http://api.unrealengine.com/INT/API/Runtime/Engine/Engine/FHitResult/)
+* Documentation Links
+	* [ECollisionChannel](https://api.unrealengine.com/INT/API/Runtime/Engine/Engine/ECollisionChannel/index.html)
+	* [FHitResult](http://api.unrealengine.com/INT/API/Runtime/Engine/Engine/FHitResult/)
+	* [LineTraceSingleByChannel](http://api.unrealengine.com/INT/API/Runtime/Engine/Engine/UWorld/LineTraceSingleByChannel/)
