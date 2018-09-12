@@ -45,3 +45,8 @@ void ACPPcharacter::Tick(float DeltaTime)
 }
 
 ```
+
+* Documentation Links
+	* [FRotationMatrix](https://api.unrealengine.com/INT/API/Runtime/Core/Math/FRotationMatrix/index.html)
+	* [FMatrix](https://api.unrealengine.com/INT/API/Runtime/Core/Math/FMatrix/index.html)
+	* [DrawDebugLine](https://api.unrealengine.com/INT/API/Runtime/Engine/DrawDebugLine/index.html)
