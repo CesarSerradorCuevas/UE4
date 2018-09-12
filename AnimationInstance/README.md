@@ -63,4 +63,30 @@ float UMyAnimInstance::CesarFunc()
 {
 	return 1.0f;
 }
+
+//CPPcharacter.h
+public:
+UPROPERTY()
+	class UMyAnimInstance* animInst;
+
+
+//CPPcharecter.cpp
+#include "Engine/Engine.h"
+#include "MyAnimInstance.h"
+
+void ACPPcharacterCharacter::BeginPlay()
+{
+
+	Super::BeginPlay();
+
+	animInst = Cast<UMyAnimInstance>(GetMesh()->GetAnimInstance());
+	animInst->SpeedCesar = 1000;
+	FString TheFloatStr = FString::SanitizeFloat(animInst->SpeedCesar);
+	
+	GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Green, *TheFloatStr);
+
+	//
+	implementableEvent();
+	
+}
 ```
