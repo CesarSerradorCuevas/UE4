@@ -32,3 +32,5 @@ void AActorA::printFunc()
 
 * Documentation
 	* [FTimerHandle](https://api.unrealengine.com/INT/API/Runtime/Engine/Engine/FTimerHandle/index.html)
+	* [FTimerManager](http://api.unrealengine.com/INT/API/Runtime/Engine/FTimerManager/index.html)
+	* [UWorld](http://api.unrealengine.com/INT/API/Runtime/Engine/Engine/UWorld/)
