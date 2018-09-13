@@ -145,3 +145,7 @@ void ABlueBox::printCar(FString car)
 
 
 ```
+
+* Documentation
+	* [UGameplayStatics](http://api.unrealengine.com/INT/API/Runtime/Engine/Kismet/UGameplayStatics/)
+	* [Events](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Delegates/Events)
