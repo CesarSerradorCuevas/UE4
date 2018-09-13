@@ -29,3 +29,6 @@ void AActorA::printFunc()
 	GEngine->AddOnScreenDebugMessage(-1, 4.0f, FColor::Green, TEXT("Hello"));
 }
 ```
+
+* Documentation
+	* [FTimerHandle](https://api.unrealengine.com/INT/API/Runtime/Engine/Engine/FTimerHandle/index.html)
