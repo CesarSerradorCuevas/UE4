@@ -7,7 +7,7 @@
 #include "GameFramework/Actor.h"
 #include "GreenBox.generated.h"
 ```
-##### //Step 1
+#### //Step 1
 ```
 DECLARE_EVENT_OneParam(ABlueBox, FMyevent, FString)
 
@@ -28,7 +28,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 ```
-##### //Step 2
+#### //Step 2
 ```
 	FMyevent OnPrintToScreen;
 	
@@ -55,8 +55,9 @@ void AGreenBox::BeginPlay()
 	Super::BeginPlay();
 
 	FString car = "BMW";
-
-	//Step 3
+```
+#### //Step 3
+```
 	OnPrintToScreen.Broadcast(car);
 	
 }
@@ -125,8 +126,9 @@ void ABlueBox::BeginPlay()
 	TArray<AActor*> foundActors;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AGreenBox::StaticClass(), foundActors);
 	AGreenBox *blueBox = Cast<AGreenBox>(foundActors[0]);
-
-	//Step 4
+```
+#### //Step 4
+```
 	blueBox->OnPrintToScreen.AddUObject(this, &ABlueBox::printCar);
 	
 }
