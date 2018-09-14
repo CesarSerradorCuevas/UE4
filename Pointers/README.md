@@ -52,11 +52,14 @@ AGreenBox::AGreenBox()
 void AGreenBox::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
+	//SharedReference
 	TSharedRef<TrunkClass> tc(new TrunkClass());
 	OnPrintToScreen.BindSP(tc, &TrunkClass::printToScreen);
 	OnPrintToScreen.ExecuteIfBound();
-
+	
+	
+	//SharedPointer
 	TSharedPtr<TrunkClass> sp = MakeShareable(new TrunkClass());
 
 	if (sp.IsValid()) {
