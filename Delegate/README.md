@@ -138,6 +138,7 @@ void ABlueBox::Tick(float DeltaTime)
 
 }
 
-
-
 ```
+
+* Documentation
+	* [DELEGATES](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Delegates)
