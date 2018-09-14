@@ -1,9 +1,10 @@
 
 ![](https://github.com/CesarSerradorCuevas/UE4/blob/master/Delegate/MD/Event.jpg?raw=true)
 
-```
-//GreenBox.h
 
+# GreenBox.h
+
+```
 #pragma once
 
 #include "CoreMinimal.h"
@@ -34,9 +35,9 @@ public:
 	FMyDelegate OnPrintToScreen;
 	
 };
-
-//GreenBox.cpp
-
+```
+# GreenBox.cpp
+```
 #include "GreenBox.h"
 
 
@@ -64,9 +65,9 @@ void AGreenBox::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
-//BlueBox.h
-
+```
+# BlueBox.h
+```
 #pragma once
 
 #include "CoreMinimal.h"
@@ -93,9 +94,9 @@ public:
 	
 };
 
-
-//BLueBox.cpp
-
+```
+# BLueBox.cpp
+```
 #include "BlueBox.h"
 #include "GreenBox.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
