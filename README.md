@@ -14,5 +14,8 @@ Ctrl + click to open links in a new tab
   * [UFUNCTION](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Functions/Specifiers)
   * [USTRUCT](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers)
   
+* Animation
+  * [AnimGraphRuntime](https://api.unrealengine.com/INT/API/Runtime/AnimGraphRuntime/index.html)
+  * [Animation](https://api.unrealengine.com/INT/API/Runtime/Engine/Animation/index.html)
 
 [Lifecycle](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/ActorLifecycle)
