@@ -10,85 +10,136 @@
 
 #include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
-#include "MyAnimInstance.generated.h"
+#include "TestAnimInst.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class CPPCHARACTER_API UMyAnimInstance : public UAnimInstance
+class CPPANIMATION_API UTestAnimInst : public UAnimInstance
 {
 	GENERATED_BODY()
 
+
 public:
 
-	UPROPERTY(BlueprintReadWrite, Category = Cesar)
-	float SpeedCesar;
+	UTestAnimInst();
 
-	UPROPERTY(BlueprintReadWrite, Category = Cesar)
-	APawn * OwningPawn;
 
-	UFUNCTION(BlueprintPure, Category = Cesar)
-		float CesarFunc();
-
+public:
 
 	virtual void NativeInitializeAnimation() override;
 
-	virtual void NativeUpdateAnimation(float DeltaTimeX) override;
+	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
 	
-};
+	class ATestCharacter* thisPawn;
+
+	UPROPERTY()
+	float varX;
 ```
 # MyAnimInstance.cpp
 ```
-#include "MyAnimInstance.h"
+#include "TestAnimInst.h"
+#include "TestCharacter.h"
 
 
-void UMyAnimInstance::NativeInitializeAnimation()
+UTestAnimInst::UTestAnimInst()
+{
+	varX = 10.0f;
+}
+
+
+
+void UTestAnimInst::NativeInitializeAnimation()
 {
 	Super::NativeInitializeAnimation();
 
-	OwningPawn = TryGetPawnOwner();
+	
 
-	UE_LOG(LogTemp, Warning, TEXT("Begin"));
+	thisPawn = Cast<ATestCharacter>(TryGetPawnOwner());
+
+	FString temp = FString::SanitizeFloat(thisPawn->varX);
+
+	UE_LOG(LogTemp, Warning, TEXT("From Animation Instance: %s"), *temp);
+	
 }
 
-void UMyAnimInstance::NativeUpdateAnimation(float DeltaTimeX)
-{
-	Super::NativeUpdateAnimation(DeltaTimeX);
 
-	UE_LOG(LogTemp, Warning, TEXT("Update"));
-}
-
-float UMyAnimInstance::CesarFunc()
+void UTestAnimInst::NativeUpdateAnimation(float DeltaSeconds)
 {
-	return 1.0f;
+	Super::NativeUpdateAnimation(DeltaSeconds);
 }
 ```
 # CPPcharacter.h
 ```
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Character.h"
+#include "TestCharacter.generated.h"
+
+UCLASS(config=Game)
+class CPPANIMATION_API ATestCharacter : public ACharacter
+{
+	GENERATED_BODY()
+
 public:
-UPROPERTY()
-	class UMyAnimInstance* animInst;
+	// Sets default values for this character's properties
+	ATestCharacter();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	class UTestAnimInst* animInst;
+
+	UPROPERTY()
+	float varX;
+	
+};
 
 ```
 # CPPcharecter.cpp
 ```
-#include "Engine/Engine.h"
-#include "MyAnimInstance.h"
+#include "TestCharacter.h"
+#include "TestAnimInst.h"
 
-void ACPPcharacterCharacter::BeginPlay()
+
+// Sets default values
+ATestCharacter::ATestCharacter()
 {
+	varX = 20.0f;
+}
 
+// Called when the game starts or when spawned
+void ATestCharacter::BeginPlay()
+{
 	Super::BeginPlay();
 
-	animInst = Cast<UMyAnimInstance>(GetMesh()->GetAnimInstance());
-	animInst->SpeedCesar = 1000;
-	FString TheFloatStr = FString::SanitizeFloat(animInst->SpeedCesar);
+	animInst = Cast<UTestAnimInst>(GetMesh()->GetAnimInstance());
+	FString temp = FString::SanitizeFloat(animInst->varX);
+	UE_LOG(LogTemp, Warning, TEXT("From Character Blueprint: %s"), *temp);
 	
-	GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Green, *TheFloatStr);
+}
 
-	//
-	implementableEvent();
-	
+// Called every frame
+void ATestCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
+
+// Called to bind functionality to input
+void ATestCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
 }
 ```
