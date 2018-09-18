@@ -16,5 +16,3 @@ Ctrl + click to open links in a new tab
   
 
 [Lifecycle](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/ActorLifecycle)
-
-[String Handling](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling)
