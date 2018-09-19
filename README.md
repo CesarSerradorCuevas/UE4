@@ -17,5 +17,7 @@ Ctrl + click to open links in a new tab
 * Animation
   * [AnimGraphRuntime](https://api.unrealengine.com/INT/API/Runtime/AnimGraphRuntime/index.html)
   * [Animation](https://api.unrealengine.com/INT/API/Runtime/Engine/Animation/index.html)
+  * [USkeletalMeshComponent](http://api.unrealengine.com/INT/API/Runtime/Engine/Components/USkeletalMeshComponent/)
+  * [UAnimSingleNodeInstance](http://api.unrealengine.com/INT/API/Runtime/Engine/Animation/UAnimSingleNodeInstance/index.html)
 
 [Lifecycle](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/ActorLifecycle)
