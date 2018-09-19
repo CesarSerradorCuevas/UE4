@@ -38,9 +38,7 @@ public:
 
 ```
 #include "DefaultPC.h"
-#include "Engine/Engine.h"
 #include "UObject/ConstructorHelpers.h"
-#include "CPPgameSetupCharacter.h"
 
 
 ADefaultPC::ADefaultPC()
