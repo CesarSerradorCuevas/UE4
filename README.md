@@ -22,6 +22,6 @@ Ctrl + click to open links in a new tab
   
   
 * AI
-  * [AIController](http://api.unrealengine.com/INT/API/Runtime/AIModule/AAIController/)
+  * [AIModule](https://api.unrealengine.com/INT/API/Runtime/AIModule/index.html)
 
 [Lifecycle](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/ActorLifecycle)
