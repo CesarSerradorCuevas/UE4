@@ -7,7 +7,8 @@ Ctrl + click to open links in a new tab
   * [Root](https://docs.unrealengine.com/en-us/)
   * [Programming](https://docs.unrealengine.com/en-us/Programming)
   * [Runtime](https://api.unrealengine.com/INT/API/Runtime/)
-  * [Engine](https://api.unrealengine.com/INT/API/Runtime/Engine/index.html)
+    * [Engine](https://api.unrealengine.com/INT/API/Runtime/Engine/index.html)
+    * [Core](https://api.unrealengine.com/INT/API/Runtime/Core/index.html)
 
 
 * Specifiers
