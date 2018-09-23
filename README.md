@@ -36,5 +36,9 @@ Ctrl + click to open links in a new tab
   
 * Interface
   * [UMG](https://api.unrealengine.com/INT/API/Runtime/UMG/index.html)
+  
+* CMD
+  * module list
+  * DumpConsoleCommands
 
 [Lifecycle](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/ActorLifecycle)
