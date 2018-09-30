@@ -6,6 +6,15 @@
 ```
 #include "GameFramework/Controller.h"
 
+ACPPcharacterCharacter::ACPPcharacterCharacter()
+{
+
+	// set our turn rates for input
+	BaseTurnRate = 45.f;
+	BaseLookUpRate = 45.f;
+
+}
+
 void ACPPcharacterCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	// Set up gameplay key bindings
