@@ -44,6 +44,12 @@ Ctrl + click to open links in a new tab
   * module list
   * DumpConsoleCommands
   
+* Character
+  * [AActor](https://api.unrealengine.com/INT/API/Runtime/Engine/GameFramework/AActor/index.html)
+  * [ACharacter](https://api.unrealengine.com/INT/API/Runtime/Engine/GameFramework/ACharacter/index.html)
+  * [APlayerController](https://api.unrealengine.com/INT/API/Runtime/Engine/GameFramework/APlayerController/index.html)
+  * [UMeshComponent](http://api.unrealengine.com/INT/API/Runtime/Engine/Components/UMeshComponent/index.html)
+  
 [Stat Commands](https://docs.unrealengine.com/en-us/Engine/Performance/StatCommands)
 
 [Lifecycle](https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/ActorLifecycle)
