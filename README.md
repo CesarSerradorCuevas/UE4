@@ -45,7 +45,9 @@ Ctrl + click to open links in a new tab
   * DumpConsoleCommands
   
 * Character
+  * [UObject](https://api.unrealengine.com/INT/API/Runtime/CoreUObject/UObject/UObject/index.html)
   * [AActor](https://api.unrealengine.com/INT/API/Runtime/Engine/GameFramework/AActor/index.html)
+  * [APawn](https://api.unrealengine.com/INT/API/Runtime/Engine/GameFramework/APawn/index.html)
   * [ACharacter](https://api.unrealengine.com/INT/API/Runtime/Engine/GameFramework/ACharacter/index.html)
   * [APlayerController](https://api.unrealengine.com/INT/API/Runtime/Engine/GameFramework/APlayerController/index.html)
   * [UMeshComponent](http://api.unrealengine.com/INT/API/Runtime/Engine/Components/UMeshComponent/index.html)
