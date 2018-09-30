@@ -43,6 +43,7 @@ void ACPPcharacterCharacter::printSomething()
 PlayerController.h
 ```
 public:
+virtual void BeginPlay() override;
 virtual void SetupInputComponent() override;
 class ACPPgameSetupCharacter* characterOne;
 ```
